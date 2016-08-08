@@ -2,4 +2,13 @@
   background-color: #111;
   margin-bottom: 0;
   color: #fff;
+  padding: 20px;
+
+  a {
+    color: #0ff;
+
+      &:hover {
+        color: #f0f;
+      }
+  }
 }
