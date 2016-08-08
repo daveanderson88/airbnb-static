@@ -1,0 +1,30 @@
+
+seb:
+  owner_name: Sebastien Saunier
+  picture: http://placehold.it/150x150
+  owner_picture: http://unsplash.it/150/150
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris
+  wifi: true
+  owner_background: http://unsplash.it/1200/200
+  rating: 6
+  fax: true
+romain:
+  owner_name: Romain Paillard
+  picture: http://placehold.it/150x150
+  owner_picture: http://placehold.it/150x150
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London
+  wifi: false
+  rating: 6
+anne:
+  owner_name: Anne smith
+  picture: http://placehold.it/150x150
+  owner_picture: http://placehold.it/150x150
+  name: anne's home
+  summary: Nice flat in Piccadilly
+  city: London
+  wifi: false
+  rating: 6

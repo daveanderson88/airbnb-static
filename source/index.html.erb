@@ -21,47 +21,27 @@ title: Le Wagon Middleman boilerplate
 </div>
 
 
+
+
+
 <div class="grey-box">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-6 col-md-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://unsplash.it/300/200');">
-          <div class="card-description">
-            <h2>1.Add Products</h2>
-            <p>Add your own product portfolio, cost data and integrate chanels</p>
-          </div>
-          <a class="card-link" href="#" ></a>
+ <div class="container">
+  <div class="row">
+    <% data.flats.each do |owner, flat| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
+        <div class="card-category"><%= flat.city %></div>
+        <div class="card-description">
+          <h2><%= flat.name %></h2>
+          <p><%= flat.summary %></p>
         </div>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://unsplash.it/300/200');">
-          <div class="card-description">
-            <h2>2.Add Competitors</h2>
-            <p>Enter the urls of sites selling the same products and set up price and avaliablity scraping.</p>
-          </div>
-          <a class="card-link" href="#" ></a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://unsplash.it/300/200');">
-          <div class="card-description">
-            <h2>3.Set rules</h2>
-            <p>Create your own re-pricing strategies and create advaced rules</p>
-          </div>
-          <a class="card-link" href="#" ></a>
-        </div>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://unsplash.it/300/200');">
-          <div class="card-description">
-            <h2>4.Make more profit</h2>
-            <p>Watch your products manage themselves, maximising your profit and saving you hours.</p>
-          </div>
-          <a class="card-link" href="#" ></a>
-        </div>
+        <%= image_tag flat.owner_picture, class:"card-user avatar avatar-large" %>
+        <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
       </div>
     </div>
+    <% end %>
   </div>
+</div>
 </div>
 
 
